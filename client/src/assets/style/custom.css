@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Roboto-light";
+    src: url("../font/Roboto/Roboto-Light.ttf");
+  }
+  @font-face {
+    font-family: "Roboto-Thin";
+    src: url("../font/Roboto/Roboto-Thin.ttf");
+  }
+  @font-face {
+    font-family: "Roboto-Regular";
+    src: url("../font/Roboto/Roboto-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Roboto-Medium";
+    src: url("../font/Roboto/Roboto-Medium.ttf");
+  }
+  @font-face {
+    font-family: "Roboto-Bold";
+    src: url("../font/Roboto/Roboto-Bold.ttf");
+  }
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #d3d3d3;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 100vh;
+    border: 1px solid #f6f7ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+  }
+}
+
+.boxShadow {
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+
+.height {
+  height: calc(100vh - 56px);
+}
